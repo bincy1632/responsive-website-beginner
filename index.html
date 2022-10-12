@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width",initial scale="1">
+        <title>Responsive Website</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+  <body>
+    <section id="header">
+        <div class="container">
+            <img src="images/monogram.jfif" class="logo">
+            <div class="headertext">
+                <h1> Hello!<br> Welcome to the World of<br> Knowledge</h1>
+                <span class="square"></span>
+                <p>Knowledge can be defined as awareness of facts or as practical skills<br>, and may also refer to familiarity with objects or situations. 
+                    Knowledge of facts, also called propositional knowledge, is often defined as true belief that is distinct from opinion 
+                    or guesswork by virtue of justification.
+                    Knowledge can be produced in many different ways.
+                     The most important source is perception, which refers to the usage of the five senses
+                      Many theorists also include introspection as a source of knowledge, not of external  physical objects,
+                       but of one's own mental states.Other sources often discussed include memory, rational intuition, inference, and testimony. According to foundationalism, some of these sources are basic in the sense that they can justify beliefs without depending on othermental states.This claim is rejected by coherentists, who contend that a sufficient degree of coherence among all the mental states of the believer is necessary for knowledge.</p>
+                       <button class="common-btn">Read More</button>
+
+                       <div class="line">
+                        <span class="line1"></span><br>
+                        <span class="line2"></span><br>
+                        <span class="line3"></span>
+                       </div>
+            </div>
+
+        </div>
+
+    </section>
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#knowledge">KNOWLEDGE BOOK</a></li>
+            <li><a href="#contacts">CONTACTS</a></li>
+        
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menubtn">
+
+    <!--about section-->
+<section id="about">
+    <div class="aboutleftcol">
+        <img src="images/about.png" >
+    </div>
+    <div class="aboutrightcol">
+        <div class="About-text">
+            <h1>About Us</h1>
+            <span class="square"></span>
+           <p>"KNOWLEDGE IS POWER"<br>
+            The more one knows, the more one will be able to control events.<br>
+            This is our Target that is getting more knowledge and reaching it out to many more people.<br>
+            Knowledge is something that you can’t subtract, and you can only add to the knowledge you already possess. <br>
+            Reading and learning is a way to increase your knowledge.
+           </p>
+           <br>
+           <h1>"Research is creating new knowledge"</h1><br>
+                          <h3><b>---Neil Armstrong---</b></h3>    
+        </div>
+    </div>
+
+</section>
+
+<!--Knowledge Book-->
+      <section id="knowledge">
+        <div class="knowledgerow">
+              <div class="knowledge-col">
+                <img src="images/pic-1.png">
+                <h4>LEARN</h4>
+                <p><b>Keep Learning and Have Courage to Express Your Ideas</b></p>
+              </div>
+              <div class="knowledge-col">
+                <img src="images/pic-2.png">
+                <h4>GROW</h4>
+                <p><b>Always in Your Side To Help Reach  Ur Goals </b></p>
+              </div>
+              <div class="knowledge-col">
+                <img src="images/pic-3.png">
+                <h4>Be Professional</h4>
+                <p><b> Have Some Hands-on Experience To  Explore Real Life</b></p>
+              </div>
+             
+          
+
+       </div>
+ </section>
+    
+<!--Contacts-->
+<section id="contacts">
+    <div class="container contact-row">
+          <div class="contact-left-col">
+           <h1>Sign Up For More Details</h1>
+           <form>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Email Address">
+            <input type="password" placeholder="Password">
+            <div class="btn-box">
+                <button class="common-btn">Sign Up</button>
+                <button class="common-btn">Demo</button>
+            </div>
+
+
+
+
+
+
+           </form>
+           
+          </div>
+          <div class="contact-right-col">
+            <img src="images/contact.png">
+          </div>
+    
+          
+   </div>
+</section>
+<!--Footer      -->
+       
+<section id="footer">
+    <div class="container footer-row">
+        <hr>
+        <div class="footer-left-col">
+            <div class="footer-links">
+                <div class="link-title">
+                    <h4>About Us</h4>
+                    <small>Request Demo</small><br>
+                    <small>FAQs</small>
+                </div>
+                <div class="link-title">
+                    <h4>Support</h4>
+                    <small>Features</small><br>
+                    <small>Contact Us</small>
+                </div>
+                <div class="link-title">
+                    <h4>Explore</h4>
+                    <small>Grow</small><br>
+                    <small>Be Professional</small>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right-col">
+            <div class="footer-info">
+                <div class="copyright-text">
+                    <small>binny@knowledge.com</small><br>
+                    <small>copyright 2022 </small>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+                           
+                 
+<!--social-icons        -->
+     
+<div class="social-icons">
+    <img src="images/facebook.png">
+    <img src="images/instagram.png">
+    <img src="images/twitter.png">
+    <img src="images/linkedin.png">
+</div> 
+                                                 
+
+
+
+
+
+    <!--javascript coding-->
+    <!--hamburger icon -->
+    <script>
+       
+        var menubtn = document.getElementById("menubtn");
+        var sidenav = document.getElementById("sidenav");
+
+        sidenav.style.right ="-250px";
+
+        menubtn.onclick = function(){
+            console.log("inside function");
+
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right ="0";
+            } else{
+                sidenav.style.right ="-250px";
+               
+
+            }
+
+        }
+      
+       </script>
+        <!--javascript code ends for hamburger design..-->
+
+    </body>
+</html>
